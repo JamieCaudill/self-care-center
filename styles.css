@@ -82,12 +82,12 @@ body {
     padding: 7px;
 }
 
-.receive-btn {
+.receive-btn-section {
     display: flex;
     justify-content: center;
 }
 
-.x, .favorites-page-btn {
+.receive-btn, .favorites-page-btn {
     font-family: 'Quicksand', sans-serif; 
     margin-top: 25px;
     margin-inline: 2px;
@@ -116,6 +116,7 @@ body {
     border: 10px;
     margin-top: 130px;
     border-radius: 10px;
+    
 }
 
 .buddha-icon {
@@ -131,7 +132,19 @@ body {
     display: none;
 }
 
+.favorite {
+    font-family: 'Quicksand', sans-serif; 
+    border-radius: 10px;
+    border: 4px;
+    color: #ffffff;
+    background-color: #134d71;
+
+}
+
 .favorite-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 5px;
     background-color: #ffffff;
     height: 80px;
@@ -144,7 +157,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    height: 80vh;
+    max-height: 80vh;
 }
 
 .remove-btn {
@@ -157,3 +172,4 @@ body {
     background-color: #134d71;
 
 }
+
