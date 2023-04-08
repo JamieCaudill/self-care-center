@@ -5,9 +5,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 class="title">✨ Self Care Center ✨</h1>
-    <h2 class="message-type">Which type of message?</h2>
+    <section class="header">
+      <h1 class="title">✨ Self Care Center ✨</h1>
+      <button class="home-btn hidden">Take Me Home</button>
+    </section>
+    <!-- home page -->
     <nav class = "home-page">
+      <h2 class="message-type">Which type of message?</h2>
       <box class="message-box">
         <box class ="box1">
           <section class="radio-btns">
@@ -21,7 +25,9 @@
             </div>
           </section>
           <section class="receive-btn">
+            <!-- change name of this button -->
             <button class="x">Receive Message</button>
+            <button class="favorites-page-btn hidden">View Favorites</button>
           </section>
         </box>    
       </box>
@@ -32,8 +38,16 @@
           <button class="favorite hidden">Favorite</button>
         </box>
     </nav>
-    <nav class="favorites-page">
-      
+    <!-- favorites page -->
+    <nav class="favorites-page hidden">
+      <section class="favorite-section">
+        <!-- temporary box -->
+        <!-- <box class="favorite-box">
+          <p class="favorite-message">Some Text</p>
+          <button class="remove-btn hidden" id="8888">Remove</button>
+        </box> -->
+        <!-- end temporary box -->
+      </section>
     </nav>
     </section>
     <script type="text/javascript" src="main.js"></script>

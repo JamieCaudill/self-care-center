@@ -13,8 +13,8 @@ html {
 
 body {
     font-family: 'Quicksand', sans-serif; 
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     background-image: linear-gradient(#1a4c70, #ded8c1);
 }
@@ -22,7 +22,26 @@ body {
 .title {
     color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+    font-size: 32px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-btn {
+    font-family: 'Quicksand', sans-serif; 
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 4px;
+    color: #ffffff;
+    background-color: #134d71;
+    border-color: #ffffff;
+    margin-bottom: 30px;
 }
 
 .message-type {
@@ -68,15 +87,17 @@ body {
     justify-content: center;
 }
 
-.x {
+.x, .favorites-page-btn {
     font-family: 'Quicksand', sans-serif; 
     margin-top: 25px;
+    margin-inline: 2px;
     color: #ffffff;
     background-color: #134d71;
     border-radius: 3px;
     padding-inline: 30px;
     padding-block: 5px;
-    border: 0px;
+    border: 2px;
+   
 }
 
 .buddha-section {
@@ -108,4 +129,31 @@ body {
 
 .hidden {
     display: none;
+}
+
+.favorite-box {
+    margin: 5px;
+    background-color: #ffffff;
+    height: 80px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.favorite-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.remove-btn {
+    font-family: 'Quicksand', sans-serif; 
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    border: 4px;
+    color: #ffffff;
+    background-color: #134d71;
+
 }
