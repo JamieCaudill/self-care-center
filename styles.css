@@ -122,8 +122,32 @@ body {
 .buddha-icon {
     height: 65px;
     width: 65px;
+    transition: transform 1s ease-in;
 }
 
+.buddha-box:hover .buddha-icon {
+    animation: left-to-right 1s forwards;
+}
+
+@keyframes left-to-right {
+0% {
+    transform: translateX(0);
+}
+
+33% {
+    transform: translateX(-100%);
+}
+
+66% {
+    transform: translateX(100%)
+}
+
+100% {
+    transform: translateX(0);
+}
+
+
+}
 .message {
     font-size: 18px;
 }
