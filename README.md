@@ -33,7 +33,7 @@ ______________________________________________________
 Have you ever been having one of those days and you just need a quick mental/spiritual pick-me-up that's not coffee or a nap? 
 Introduction the **Self Care Center**, an app that sends positive messages straight to you, the user. 
 
-# Features:
+### Features:
 - When you first visit the sight, experience the soothing color pallete and fade-in text that whispers "It's all going to be okay."
 - Choose between a mantra or an affirmation and then click the receive message button. The selected message will be displayed for your self-care benefit. 
 - If you want to remember the message forever, or at least until you exit the webpage, click the small **+** button located directly below the received message.
@@ -51,7 +51,7 @@ Introduction the **Self Care Center**, an app that sends positive messages strai
 4. View the project in the browser by running open index.html
 
 ### Preview of App:
-![alt text]<img src=“https://user-images.githubusercontent.com/82983696/169575437-e24aa227-b1b2-4170-991b-9fffd5dcaeb3.png” width="800">
+<script src="https://gist.github.com/JamieCaudill/2f51556b1b1a3e63a78aad7a5afacea5.js"></script>
 
 ### Context:
 This project was the second solo project in Mod 1. We are just about to start Week 4 and the first group project.
