@@ -30,22 +30,42 @@ ______________________________________________________
 # Self-Care Center 
 
 ### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+Have you ever been having one of those days and you just need a quick mental/spiritual pick-me-up that's not coffee or a nap? 
+Introduction the **Self Care Center**, an app that sends positive messages straight to you, the user. 
+
+#Features:
+- When you first visit the sight, experience the soothing color pallete and fade-in text that whispers "It's all going to be okay."
+- Choose between a mantra or an affirmation and then click the receive message button. The selected message will be displayed for your self-care benefit. 
+- If you want to remember the message forever, or at least until you exit the webpage, click the small **+** button located directly below the received message.
+- Once the **+** button is clicked, a **View Favorites** button will appear. If clicked, you will be taken to the *Favorites Page*, where every favorited message will be displayed.
+- Hover over the small **X** button and a message will be displayed telling the user to *double click to remove message*. If a message is double clicked, it will immediately disappear from the page and be removed from the Data Model. 
+- If you wish to return to the *Home Page*, simply press the **Take Me Home** button.
+
+- For extra Self Care fun, hover your mouse over the meditation icon before receiving a message when the page loads. 
+
 
 ### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+1. Fork the repository
+2. Clone the new forked repo
+3. Open in your text editor
+4. View the project in the browser by running open index.html
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+![alt text](https://gist.github.com/JamieCaudill/2f51556b1b1a3e63a78aad7a5afacea5)
 
 ### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+This project was the second solo project in Mod 1. We are just about to start Week 4 and the first group project.
 
 ### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+Jamie Caudill: https://github.com/JamieCaudill
 
 ### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+The main learning goals for this project were centered around getting exposure to the interconnectedness of CSS, HTML, and Javascript. I feel much better about navigating between these, and the purpose for which each is used in programming. 
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+- Challenge: Organizing the layout.
+- Win: Learning how to use the Flex Box Display!
+- Challenge: Pull Requests.
+- Win: Using time to talk to my rock about Pull Request Templates.
+- Challenge: CSS animation.
+- Win: Spending hours playing around with CSS animation. 
