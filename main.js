@@ -3,9 +3,14 @@
 // variables
 var buddha = document.querySelector('.buddha-icon');
 var message = document.querySelector('.message');
+var buddhaBox = document.querySelector('.buddha-box');
 var favoriteSection = document.querySelector('.favorite-section');
 var favoriteMessage = document.querySelector('.favorite-message');
 var favoriteBox = document.querySelector('.favorite-box');
+var buddhaMessage = document.querySelector('.buddha-to-message');
+var addedMessage = document.querySelector('.added-message');
+var favBtnDiv = document.querySelector('.fav-btn-div');
+var removeInfo = document.querySelector('.remove-info');
 // button variables
 var removeBtn = document.querySelector('.remove-btn');
 var receiveBtn = document.querySelector('.receive-btn-section');
@@ -23,9 +28,19 @@ var currentMessage = [];
 
 // event listeners
 
-receiveBtn.addEventListener('click', receiveMessage);
+receiveBtn.addEventListener('click', function() {
+    receiveMessage()
+});
 
 favBtn.addEventListener('click', addFavorite);
+
+favBtn.addEventListener('mouseover', function() {
+    addedMessage.classList.remove('hide');
+} )
+
+favBtn.addEventListener('mouseout', function() {
+    addedMessage.classList.add('hide');
+})
 
 favoritesPageBtn.addEventListener('click', viewFavoritesPage);
 
@@ -33,18 +48,22 @@ homeBtn.addEventListener('click', viewHomePage);
 
 favoriteSection.addEventListener("dblclick", removeFavorite);
 
+removeBtn.addEventListener('mouseover', function() {
+    removeInfo.classList.remove('hide');
+})
+
+removeBtn.addEventListener('mouseout', function() {
+    removeInfo.classList.add('hide');
+})
+
+
+
 // functions
 
 function receiveMessage() {
-    displayMessage();
-    var displayedMessage = getMessage();
-    message.innerText = displayedMessage.message;
-};
-
-function displayMessage() {
-    buddha.classList.add('hidden');
-    message.classList.remove('hidden');
+    buddhaMessage.innerHTML = '';
     favBtn.classList.remove('hidden');
+    buddhaMessage.innerHTML = `<p class="message">${getMessage().message}</p>`
 };
 
 function getRandomIndex(messageType) {
@@ -80,6 +99,7 @@ function viewFavoritesPage() {
     homePage.classList.add('hidden');
     favoritesPage.classList.remove('hidden');
     homeBtn.classList.remove('hidden');
+    removeBtn.classList.remove('hide');
     displayFavMessage();
 };
 
@@ -87,6 +107,7 @@ function viewHomePage() {
     homePage.classList.remove('hidden');
     favoritesPage.classList.add('hidden');
     homeBtn.classList.add('hidden');
+    removeBtn.classList.add('hide');
 };
 
 function displayFavMessage() {
@@ -113,3 +134,4 @@ function removeFavorite(e) {
 
 
 
+  

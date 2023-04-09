@@ -17,7 +17,10 @@ body {
     width: 100vw;
     margin: 0;
     background-image: linear-gradient(#1a4c70, #ded8c1);
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
+
 
 .title {
     color: #ffffff;
@@ -48,7 +51,10 @@ body {
     color: #ffffff;
     text-align: center;
     padding-top: 100px;
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
+    
 
 .message-box {
     display: flex;
@@ -60,7 +66,10 @@ body {
     width: 500px;
     padding: 10px;
     border-radius: 10px;
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
+
 
 .radio-btns {
     display: flex;
@@ -97,8 +106,15 @@ body {
     padding-inline: 30px;
     padding-block: 5px;
     border: 2px;
-   
 }
+
+.receive-btn:hover, .favorites-page-btn:hover, .favorite:hover, .home-btn:hover {
+    animation: button 200ms forwards;
+}
+
+/* .favorites-page-btn:hover {
+    animation: button 200ms forwards;
+} */
 
 .buddha-section {
     display: flex;
@@ -116,13 +132,19 @@ body {
     border: 10px;
     margin-top: 130px;
     border-radius: 10px;
-    
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
+
+@keyframes fade-in {
+0% {opacity: 0}
+100%{opacity: 100%}    
+}
+
 
 .buddha-icon {
     height: 65px;
     width: 65px;
-    transition: transform 1s ease-in;
 }
 
 .buddha-box:hover .buddha-icon {
@@ -145,15 +167,21 @@ body {
 100% {
     transform: translateX(0);
 }
-
-
 }
+
 .message {
     font-size: 18px;
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
+    
 
 .hidden {
     display: none;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 .favorite {
@@ -162,9 +190,22 @@ body {
     border: 4px;
     color: #ffffff;
     background-color: #134d71;
-
+    font-size: 14px;
 }
 
+.added-message {
+    font-size: 10px;
+    color:gray;
+    margin-bottom: -20px;
+    animation: fade-in 1s;
+}
+
+.fav-btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
 .favorite-box {
     display: flex;
     justify-content: center;
@@ -184,16 +225,38 @@ body {
     flex-wrap: wrap;
     height: 80vh;
     max-height: 80vh;
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
 
 .remove-btn {
     font-family: 'Quicksand', sans-serif; 
-    width: 80px;
-    height: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 4px;
     color: #ffffff;
     background-color: #134d71;
-
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    animation: button;
 }
 
+.remove-info-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-info {
+    font-size: 14px;
+    color: #fff;
+    animation: fade-in 1s;
+}
+
+@keyframes button {
+    100% {
+        background-color: darkcyan;
+        font-size: 14px;
+        }
+    }
