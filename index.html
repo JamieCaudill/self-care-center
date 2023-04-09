@@ -7,7 +7,11 @@
   <body>
     <section class="header">
       <h1 class="title">✨ Self Care Center ✨</h1>
-      <button class="home-btn hidden">Take Me Home</button>
+        <div class="remove-info-div">
+          <button class="home-btn hidden">Take Me Home</button>
+          <button class="remove-btn hide">X</button>
+          <p class="remove-info hide">double click message to remove</p>
+        </div>
     </section>
     <nav class = "home-page">
       <h2 class="message-type">Which type of message?</h2>
@@ -31,21 +35,19 @@
       </box>
       <section class="buddha-section">
         <box class="buddha-box">
-          <img class="buddha-icon" src="./assets/meditate.svg">
-          <p class="message hidden">Message will display here</p>
-          <button class="favorite hidden">+</button>
+          <div class='buddha-to-message'>
+            <img class="buddha-icon" src="./assets/meditate.svg">
+            <p class="message hidden">Message will display here</p>
+          </div>
+          <div class="fav-btn-div">
+            <button class="favorite hidden">+</button>
+            <p class="added-message hide">add to favorites</p>
+          </div>
         </box>
     </nav>
     <!-- favorites page -->
     <nav class="favorites-page hidden">
-      <section class="favorite-section">
-        <!-- temporary box -->
-        <!-- <box class="favorite-box">
-          <p class="favorite-message">Some Text</p>
-          <button class="remove-btn hidden" id="8888">Remove</button>
-        </box> -->
-        <!-- end temporary box -->
-      </section>
+      <section class="favorite-section"></section>
     </nav>
     </section>
     <script type="text/javascript" src="main.js"></script>
