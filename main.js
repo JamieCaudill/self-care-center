@@ -28,15 +28,13 @@ var currentMessage = [];
 
 // event listeners
 
-receiveBtn.addEventListener('click', function() {
-    receiveMessage()
-});
+receiveBtn.addEventListener('click', receiveMessage);
 
 favBtn.addEventListener('click', addFavorite);
 
 favBtn.addEventListener('mouseover', function() {
     addedMessage.classList.remove('hide');
-} )
+} );
 
 favBtn.addEventListener('mouseout', function() {
     addedMessage.classList.add('hide');
